@@ -182,10 +182,10 @@ def get_external_books(request):
             "name": book.get('name'),
             "isbn": book.get('isbn'),
             "authors": book.get('authors'),
-            "number_of_pages": book.get('number_of_pages'),
+            "number_of_pages": book.get('numberOfPages'),
             "publisher": book.get('publisher'),
             "country": book.get('country'),
-            "release_date": book.get('release_date')
+            "release_date": book.get('released')
         })
     return JsonResponse({
         "status_code": 200,
